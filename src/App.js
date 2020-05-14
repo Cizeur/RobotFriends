@@ -30,6 +30,7 @@ class App extends Component{
         || robots.email.toLowerCase().includes(this.state.searchfield.toLowerCase())
         )
     });
+    if (this.state.robots.length === 0) return <h1 className="tc f1">Loading</h1>
     return (
       <div className='tc'>
         <h1 className="f1">RoboFriends</h1>
