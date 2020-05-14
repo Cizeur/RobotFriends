@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import {robots} from './robots.js';
-import CardList from './CardList.js'
+import CardList from './CardList.js';
 
 const App = () =>{
   return (
