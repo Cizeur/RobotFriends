@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
-import Card from './Card.js'
+import CardList from './CardList.js'
 //import Hello from './Hello.js';
 import * as serviceWorker from './serviceWorker';
 import "tachyons";
@@ -11,7 +11,7 @@ import {robots} from './robots.js';
 ReactDOM.render(
   <React.StrictMode>
     <div>
-      <Card id={robots[0].id} name={robots[0].name} email={robots[0].email}/>
+      <CardList robots={robots}/>
     </div>
   </React.StrictMode>,
   document.getElementById('root')
