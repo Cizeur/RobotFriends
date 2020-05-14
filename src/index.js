@@ -5,11 +5,14 @@ import './index.css';
 import Card from './Card.js'
 //import Hello from './Hello.js';
 import * as serviceWorker from './serviceWorker';
-import "tachyons"
+import "tachyons";
+import {robots} from './robots.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Card />
+    <div>
+      <Card id={robots[0].id} name={robots[0].name} email={robots[0].email}/>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
