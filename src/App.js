@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import {robots} from './robots.js';
 import CardList from './CardList.js';
 import SearchBox from './SearchBox.js';
 
 const App = () =>{
   return (
-    <Fragment>
-    <h1>Robofriends</h1>
-    <SearchBox />
-    <CardList robots={robots}/>
-    </Fragment>
+    <div className='tc'>
+      <h1>RoboFriends</h1>
+      <SearchBox />
+      <CardList robots={robots}/>
+    </div>
   )
 }
 
