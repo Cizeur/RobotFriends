@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider , connect} from 'react-redux';
-import { createStore } from 'redux';
+import { createStore} from 'redux';
 import './index.css';
 import App from './containers/App.js';
 import * as serviceWorker from './serviceWorker';
@@ -12,7 +12,10 @@ const store = createStore(searchRobots);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App store={store} />
+    <Provider store={store} >
+      <App />
+    </Provider>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
